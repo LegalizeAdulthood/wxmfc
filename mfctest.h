@@ -49,7 +49,7 @@ protected:
 
 #else // !START_WITH_MFC_WINDOW
 
-typedef wxMFCWinApp SampleMFCWinApp;
+using SampleMFCWinApp = wxMFCWinApp;
 
 #endif // START_WITH_MFC_WINDOW/!START_WITH_MFC_WINDOW
 
