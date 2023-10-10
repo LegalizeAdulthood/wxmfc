@@ -7,10 +7,7 @@
 /////////////////////////////////////////////////////////////////////////////
 
 // This sample pops up an initial wxWidgets frame, with a menu item
-// that allows a new MFC window to be created. Note that CDummyWindow
-// is a class that allows a wxWidgets window to be seen as a CWnd
-// for the purposes of specifying a valid main window to the
-// MFC initialisation.
+// that allows a new MFC window to be created.
 //
 // You can easily modify this code so that an MFC window pops up
 // initially as the main frame, and allows wxWidgets frames to be
@@ -59,18 +56,18 @@
 #include "stdafx.h"
 
 // For compilers that support precompilation, includes "wx/wx.h".
-#include "wx/wxprec.h"
+#include <wx/wxprec.h>
 
 
 #ifndef WX_PRECOMP
-    #include "wx/wx.h"
+    #include <wx/wx.h>
 #endif
 
-#include "wx/evtloop.h"
-#include "wx/nativewin.h"
-#include "wx/spinctrl.h"
+#include <wx/evtloop.h>
+#include <wx/nativewin.h>
+#include <wx/spinctrl.h>
 
-#include "wx/msw/mfc.h"
+#include <wx/msw/mfc.h>
 
 #include "resource.h"
 
