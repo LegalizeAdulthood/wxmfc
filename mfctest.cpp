@@ -106,7 +106,7 @@ public:
 class MyChild: public wxFrame
 {
 public:
-    MyChild(wxFrame *frame, const wxString& title, const wxPoint& pos, const wxSize& size, const long style);
+    MyChild(wxFrame *parent, const wxString& title, const wxPoint& pos, const wxSize& size, const long style);
     virtual ~MyChild();
 
     void OnQuit(wxCommandEvent& event);
@@ -340,8 +340,8 @@ wxBEGIN_EVENT_TABLE(MyChild, wxFrame)
     EVT_ACTIVATE(MyChild::OnActivate)
 wxEND_EVENT_TABLE()
 
-MyChild::MyChild(wxFrame *frame, const wxString& title, const wxPoint& pos, const wxSize& size, const long style)
-       : wxFrame(frame, -1, title, pos, size, style)
+MyChild::MyChild(wxFrame *parent, const wxString& title, const wxPoint& pos, const wxSize& size, const long style)
+       : wxFrame(parent, -1, title, pos, size, style)
 {
     canvas = NULL;
 }
