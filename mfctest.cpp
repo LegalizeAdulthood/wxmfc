@@ -19,7 +19,7 @@
 //
 // This can be accomplished by setting START_WITH_MFC_WINDOW to 1 below.
 
-#define START_WITH_MFC_WINDOW 0
+#define START_WITH_MFC_WINDOW 1
 
 // NOTES:
 //

@@ -24,7 +24,7 @@ public:
     DECLARE_MESSAGE_MAP()
 
 private:
-    class wxNativeContainerWindow* m_containerWX;
+    wxNativeContainerWindow *m_containerWX;
 };
 
 #if START_WITH_MFC_WINDOW
